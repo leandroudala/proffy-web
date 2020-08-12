@@ -17,7 +17,6 @@ function Landing() {
     
     useEffect(() => {
         api.get('/connection').then(res => {
-            console.log(res.data.total)
             setTotal(res.data.total)
         })
     }, [])
